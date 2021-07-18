@@ -176,6 +176,7 @@ height: 42px;
 border: none;
 background: #EF042E;
 border-radius: 5px;
+cursor: pointer;
 }
 
 footer>.container{
