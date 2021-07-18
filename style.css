@@ -6,22 +6,6 @@
   color: #E5E5E5;
 }
 
-h1{
-  font-size: 6rem;
-}
-h2{
-  font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 2rem;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-
-color: #E5E5E5;
-}
-h3{
-  font-size: 1rem;
-}
 
 a{
   text-decoration: none;
@@ -34,27 +18,20 @@ body{
 }
 
 .container{
-  max-width: 1440px;
-  padding: 0 3rem;
-  margin: 0 auto;
+  padding: 0 2rem;
 }
+
 
 .hero{
   display:flex;
-}
-
-
-.hero-left{
-  padding: 2rem 1rem;
-  height:100vh;
-  width: 100vw;
+  flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .logo1{
   max-width: 300px;
   margin-top: 2rem;
 }
-
 .headline{
   margin: 6rem 0;
 }
@@ -89,16 +66,6 @@ text-transform: uppercase;
 color: #FAFA6E;
 }
 
-.hero-right{
-  height:100vh;
-  width: 100vw;
-}
-
-.hero-right>img{
-  height:100vh;
-  margin:0 2rem;
-}
-
 .products{
   background-image: url("./img/plantabg.png");
   background-position: center;
@@ -111,7 +78,7 @@ color: #FAFA6E;
 .block{
   display: flex;
   flex-direction: column;
-
+  padding:2rem 0;
 }
 
 .block>h2{
@@ -233,3 +200,121 @@ color: #FFFFFF;
 footer>div{
   display: flex;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+  .container{
+    padding: 0 2rem;
+  }
+
+  .hero{
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+.logo1{
+  max-width: 150px;
+  margin-top: 2rem;
+}
+.headline{
+  margin: 3rem 0;
+}
+
+.headline> h1{
+font-size:4rem;
+}
+
+.headline> h2{
+font-size: 1rem;
+}
+
+.subheadline{
+font-size: 0.8rem;
+}
+
+
+.block{
+  display: flex;
+  flex-direction: column;
+  padding:2rem 0;
+}
+
+.block>h2{
+  text-align: center;
+padding-top:3rem;
+text-shadow: 0 8px 8px 0 rgba(41, 41, 41, 0.3);
+font-size: 2rem;
+}
+
+.block-cards{
+  display:flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  }
+
+
+.email-capture{
+  display:block;
+  padding:0 1rem;
+}
+.email-capture>h3{
+font-size: 1.5rem;
+text-align: center;
+
+margin-bottom: 1.5rem;
+
+}
+
+
+.email{
+  width: 75%;
+height: 42px;
+}
+
+.btn-email{
+  width: 25%;
+height: 42px;
+
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+ }
+
+footer>p{
+letter-spacing: 0.1em;
+
+
+color: #FFFFFF;
+}
+
+.logo{
+  width:110px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
