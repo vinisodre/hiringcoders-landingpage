@@ -11,6 +11,14 @@ a{
   text-decoration: none;
 }
 
+p{
+font-family: Open Sans;
+font-style: thin;
+font-weight: 100;
+font-size: 0.9rem;
+
+color:white;
+}
 
 body{
   background: linear-gradient(107.76deg, #2A4858 -20.84%, #000000 45.62%);
@@ -23,9 +31,20 @@ body{
 
 
 .hero{
+  display: flex;
+  padding: 3rem 2rem;
+}
+
+.left{
   display:flex;
+  flex:1;
   flex-direction: column;
-  margin-bottom: 3rem;
+}
+
+.right{
+  background-image: url("./img/heroplanta.png");
+  flex:1;
+  background-size: cover;
 }
 
 .logo1{
@@ -98,7 +117,7 @@ text-shadow: 0 8px 8px 0 rgba(41, 41, 41, 0.125);
   background:white;
   border-radius:20px;
   width: 245px;
-  height: 400px;
+  height: 100%;
   padding: 1rem;
   display: flex;
   flex-direction:column;
@@ -112,7 +131,7 @@ text-shadow: 0 8px 8px 0 rgba(41, 41, 41, 0.125);
 
 
 
-.card-text >p{
+.card-text >h4{
   margin: 0.5rem 0;
   font-family: Open Sans;
 font-style: normal;
@@ -124,6 +143,11 @@ color: #000000;
 }
 .card-text > h2{
   color:red;
+  text-align: right;
+}
+
+.card-text>p{
+  color: rgb(0, 12, 4);
 }
 
 .btn-card{
@@ -133,6 +157,7 @@ color: #000000;
   border: none;
   border-radius: 20px;
   box-shadow: 0 8px 8px 0 rgba(41, 41, 41, 0.2);
+  cursor: pointer;
 }
 
 .email-capture{
@@ -179,34 +204,29 @@ border-radius: 5px;
 cursor: pointer;
 }
 
-footer>.container{
+footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height:4rem ;
 }
 
-footer>p{
-  font-family: Open Sans;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-}
 
 .logo{
   width:175px;
 }
 
-footer>div{
-  display: flex;
-}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
 
   .container{
     padding: 0 2rem;
+  }
+
+  .right{
+    display:none;
   }
 
   .hero{
@@ -223,11 +243,11 @@ footer>div{
 }
 
 .headline> h1{
-font-size:4rem;
+font-size:6rem;
 }
 
 .headline> h2{
-font-size: 1rem;
+font-size: 1.8rem;
 }
 
 .subheadline{
@@ -245,7 +265,7 @@ font-size: 0.8rem;
   text-align: center;
 padding-top:3rem;
 text-shadow: 0 8px 8px 0 rgba(41, 41, 41, 0.3);
-font-size: 2rem;
+font-size: 1.8rem;
 }
 
 .block-cards{
@@ -260,7 +280,7 @@ font-size: 2rem;
   padding:0 1rem;
 }
 .email-capture>h3{
-font-size: 1.5rem;
+font-size: 1.2rem;
 text-align: center;
 
 margin-bottom: 1.5rem;
@@ -280,42 +300,13 @@ height: 42px;
 }
 
 footer{
-  display: flex;
-  flex-direction: column;
+  margin: 1rem auto;
  }
 
-footer>p{
-letter-spacing: 0.1em;
-
-
-color: #FFFFFF;
-}
 
 .logo{
-  width:110px;
+  width:150px;
 }
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
